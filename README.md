@@ -1,0 +1,1 @@
+# plugins-bulk-image-title-attribute
