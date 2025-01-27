@@ -5,7 +5,7 @@ Requires at least: 4.1
 Requires PHP: 5.6
 Tested up to: 6.7
 WC tested up to: 8.8
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -176,3 +176,6 @@ We always recommend using both alt text and image title with your images. One cl
 * 🐛 FIX: Bug fixes and many other improvements
 * 🐛 FIX: Bug fixes and many other improvements
 * 👌 IMPROVE: Updated freemius to v2.7.2
+
+= 2.0.1 =
+* 🐛 FIX: Freemius SDK Security fix
