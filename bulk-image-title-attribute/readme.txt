@@ -3,7 +3,7 @@ Contributors: the-rock, pagup, freemius
 Tags: title attribute, title tag, google images, image title
 Requires at least: 4.1
 Requires PHP: 5.6
-Tested up to: 6.7
+Tested up to: 6.9
 WC tested up to: 8.8
 Stable tag: 2.0.1
 License: GPLv2 or later
