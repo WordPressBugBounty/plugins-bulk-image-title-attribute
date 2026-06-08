@@ -3,9 +3,9 @@ Contributors: the-rock, pagup, freemius
 Tags: title attribute, title tag, google images, image title
 Requires at least: 4.1
 Requires PHP: 5.6
-Tested up to: 6.9
+Tested up to: 7.0
 WC tested up to: 8.8
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -79,6 +79,9 @@ We always recommend using both alt text and image title with your images. One cl
 2. Bulk Image Title Attribute Settings Page
 
 == Changelog ==
+
+= 2.0.2 =
+* Update Freemius SDK to 2.13.1.
 
 = 1.0.0 =
 * Initial release.
