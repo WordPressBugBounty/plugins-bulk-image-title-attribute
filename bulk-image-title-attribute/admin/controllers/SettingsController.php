@@ -23,12 +23,12 @@ class SettingsController
     public function page() {
 
         if ( ! current_user_can( 'manage_options' ) ) {
-			wp_die( __( 'Sorry, you are not allowed to access this page.', "better-robots-txt" ) );
+			wp_die( __( 'Sorry, you are not allowed to access this page.', "bulk-image-title-attribute" ) );
 		}
 
 		// only users with `unfiltered_html` can edit scripts.
 		if ( ! current_user_can( 'unfiltered_html' ) ) {
-			wp_die( __( 'Sorry, you are not allowed to edit this page. Ask your administrator for assistance.', "better-robots-txt" ) );
+			wp_die( __( 'Sorry, you are not allowed to edit this page. Ask your administrator for assistance.', "bulk-image-title-attribute" ) );
 		}
 
         // Get list of post types to display as checkbox options

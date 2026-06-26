@@ -14,7 +14,7 @@
 
     <p class="post-attributes-label-wrapper"><label class="post-attributes-label" for="bigta_text"><?php echo  esc_html__( 'Insert your custom Title text (other than page title)', "bulk-image-title-attribute" ) ;?></label></p>
 
-    <input type="text" name="bigta_custom_title" value="<?php if ( !empty($bigta_custom_title) ) echo $bigta_custom_title; ?>">
+    <input type="text" name="bigta_custom_title" value="<?php if ( !empty($bigta_custom_title) ) echo esc_attr( $bigta_custom_title ); ?>">
 
     <p class="post-attributes-label-wrapper"><label class="post-attributes-label" for="bigta_text"><?php echo  esc_html__( 'Disable BIGTA?', "bulk-image-title-attribute" ); ?></label></p>
 

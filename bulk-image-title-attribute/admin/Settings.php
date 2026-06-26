@@ -31,7 +31,7 @@ class Settings {
             add_meta_box(
                 'bigta_post_options',
                 // id, used as the html id att
-                __( 'Bulk Image Title Attribute' ),
+                __( 'Bulk Image Title Attribute', 'bulk-image-title-attribute' ),
                 // meta box title
                 array(&$this->metabox, 'metabox'),
                 // callback function, spits out the content

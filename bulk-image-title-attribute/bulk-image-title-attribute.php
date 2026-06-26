@@ -4,7 +4,7 @@
 * Plugin Name: BIGTA - Bulk Image Title Attribute
 * Description: Auto-optimize (bulk) your Image title attributes (Image title tags, title text) from page/post/product titles &/or site name or with custom instructions (Post META Box) into HTML code.
 * Author: Pagup
-* Version: 2.0.2
+* Version: 2.0.3
 * Author URI: https://pagup.com/
 * Text Domain: bulk-image-title-attribute
 * Domain Path: /languages/

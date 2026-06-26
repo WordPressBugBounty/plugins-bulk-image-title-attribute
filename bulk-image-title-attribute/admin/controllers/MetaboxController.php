@@ -19,6 +19,8 @@ class MetaboxController
             'bigta_custom_title' => get_post_meta($post->ID, 'bigta_custom_title', true),
             'bigta_disable' => get_post_meta($post->ID, 'bigta_disable', true)
         ];
+
+        wp_nonce_field( 'bigta_metabox', 'bigta_metabox_nonce' );
         
         return Plugin::view('metabox', $data);
     }
@@ -26,6 +28,10 @@ class MetaboxController
     public function metadata ($postid)
     {   
         if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return false;
+        if ( wp_is_post_autosave( $postid ) || wp_is_post_revision( $postid ) ) return false;
+        if ( ! isset( $_POST['bigta_metabox_nonce'] ) ) return false;
+        $nonce = sanitize_text_field( wp_unslash( $_POST['bigta_metabox_nonce'] ) );
+        if ( ! wp_verify_nonce( $nonce, 'bigta_metabox' ) ) return false;
         if ( !current_user_can( 'edit_page', $postid ) ) return false;
         if( empty($postid) ) return false;
 
@@ -39,7 +45,7 @@ class MetaboxController
             delete_post_meta( $postid, 'bigta_use_custom_title' );
 
         ( Request::check('bigta_custom_title') ) ? 
-            update_post_meta( $postid, 'bigta_custom_title', sanitize_text_field( $_POST['bigta_custom_title'] ) ) : 
+            update_post_meta( $postid, 'bigta_custom_title', sanitize_text_field( wp_unslash( $_POST['bigta_custom_title'] ) ) ) :
             delete_post_meta( $postid, 'bigta_custom_title' );
 
         ( Request::post('bigta_disable', $safe) ) ? 
