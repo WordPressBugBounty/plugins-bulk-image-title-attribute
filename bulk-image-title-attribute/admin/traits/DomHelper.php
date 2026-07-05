@@ -54,6 +54,13 @@ trait DomHelper {
 
         }
 
+        elseif ( defined('SEOPRESS_VERSION') || function_exists('seopress_get_service') ) {
+
+            // define focus keyword for SEOPress
+            $focus_keyword = get_post_meta( $post_id, '_seopress_analysis_target_kw', true );
+
+        }
+
         elseif (function_exists('aioseo') && $wpdb->get_var("SHOW TABLES LIKE '{$wpdb->prefix}aioseo_posts'") === "{$wpdb->prefix}aioseo_posts") {
 
             // Define focus keyword for All in One SEO

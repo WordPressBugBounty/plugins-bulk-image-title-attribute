@@ -5,15 +5,15 @@ Requires at least: 4.1
 Requires PHP: 5.6
 Tested up to: 7.0
 WC tested up to: 8.8
-Stable tag: 2.0.3
+Stable tag: 2.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Auto-optimize (bulk) your Image title attributes (Image title tags, title text) from page/post/product titles &/or site name or with custom instructions (Post META Box) into HTML code.
+Auto-optimize (bulk) your Image title attributes (Image title tags, title text) from page/post/product titles, SEO keywords, site name, or custom instructions (Post META Box) into HTML code.
 
 == Description ==
 
-The BIGTA (Bulk Image title attribute) plugin automatically adds title attributes (title tags) to your images (within the HTML code) from page/article titles or image names and/or site name, either separately or combined, depending on your requirements.
+The BIGTA (Bulk Image title attribute) plugin automatically adds title attributes (title tags) to your images (within the HTML code) from page/article titles, SEO keywords, image names, and/or site name, either separately or combined, depending on your requirements. Supported SEO keyword sources include Yoast SEO, Rank Math, SEOPress, and All in One SEO (AIOSEO).
 
 **A quick summary:**
 
@@ -34,8 +34,8 @@ About Gutenberg: Unfortunately, with the latest release of Gutenberg (WordPress 
 The BIGTA PRO plugin allows you to manage Woocommerce products (pages) with the same options (either separately or combined):
 
 - Product title as Image title attribute
-- Yoast / Rank math keywords as image title attribute
-- Yoast / Rank Math Keyword + Post title as image title attribute
+- Yoast SEO / Rank Math / SEOPress / AIOSEO keywords as image title attribute
+- Yoast SEO / Rank Math / SEOPress / AIOSEO keyword + Post title as image title attribute
 - Image name as image title attribute
 - Site name as Image title attribute
 
@@ -79,6 +79,9 @@ We always recommend using both alt text and image title with your images. One cl
 2. Bulk Image Title Attribute Settings Page
 
 == Changelog ==
+
+= 2.0.4 =
+* Add SEOPress focus keyword support for generated image title attributes.
 
 = 2.0.3 =
 * Security hardening (metabox nonce) and admin UI maintenance.
